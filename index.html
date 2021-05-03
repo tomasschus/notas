@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mis Tareas web</title>
+
+    <link rel="icon" href="static/icon.png">
+    <link href="style.css" rel="stylesheet" type="text/css"  />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel='manifest' href='/manifest.webmanifest'>
+
+  </head>
+  <body>
+  	<nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="static/icon.png" width="35" height="35" class="d-inline-block align-top" alt="">
+        Mis Tareas Web
+      </a>
+      <div class="my-2 my-lg-0">
+        <button hidden="true">Login</button>
+      </div>
+    </nav>
+    
+    <template id="template">
+      <div class="alert alert-warning d-flex justify-content-between align-items-center">
+        <p class="m-0"> </p>
+        <h3 class="m-0">
+          <i class="fas fa-check-circle text-success" role="button"></i>
+          <i class="fas fa-times-circle text-danger"role="button"></i>
+        </h3>
+      </div>
+    </template>
+
+    <br>
+    <div class="container">
+      <form id="formulario">
+        <input type="text" autofocus placeholder="Ingrese tarea" class="form-control my-2">
+        <button class="btn btn-block btn-primary" type="submit">GUARDAR</button>
+      </form>
+    </div>
+
+    <br>
+    <div id="lista-tareas" class="mt-3">
+        
+    </div>
+
+    <div id="footer" class="footer">
+        Creado por Tomás Schuster
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
